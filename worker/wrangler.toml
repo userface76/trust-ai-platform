@@ -1,0 +1,4 @@
+name = "trust-ai-api"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+# Set SUPABASE_URL via vars and SUPABASE_SERVICE_ROLE_KEY via wrangler secret put.
