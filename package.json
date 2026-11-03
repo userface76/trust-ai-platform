@@ -1,17 +1,18 @@
 {
   "name": "trust-ai-platform",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite --config web/vite.config.js",
     "build": "vite build --config web/vite.config.js",
     "worker:dev": "wrangler dev --config worker/wrangler.toml",
+    "deploy": "npm run build && wrangler deploy --config worker/wrangler.toml",
     "test": "node --test tests/*.test.js"
   },
   "dependencies": {
     "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "@supabase/supabase-js": "2.49.0"
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "vite": "6.1.0",
