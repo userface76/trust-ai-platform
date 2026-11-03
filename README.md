@@ -36,3 +36,14 @@ Only a minimal risk-result record is saved when D1 is configured; user input is 
 ## Production requirements
 
 Add Turnstile, rate limiting, logging/retention controls, testing, and real threat-intelligence providers before a public safety-critical launch. No current URL fetch or external verification.
+
+## Community comment moderation policy (planned)
+
+Community posting and comments are not implemented yet. When implementing them:
+- Accept relevant experiences, questions, corrections, and dissenting opinions even if they disagree with the scan result.
+- Reject obvious spam, unrelated promotions, repeated copy-paste, phishing links, and malicious solicitations.
+- Hold ambiguous/off-topic comments for review rather than irreversible deletion.
+- Hide personal data and threatening content pending review.
+- Persist moderation reason codes, rule/model version, timestamps, and an appeal workflow; limit retention and access.
+- Rate-limit submissions, require authenticated writers, and allow administrators to override automated decisions.
+- Never treat popularity or community comments as verified evidence by themselves.
